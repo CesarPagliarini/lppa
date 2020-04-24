@@ -1,0 +1,30 @@
+body{
+    background-color: #B0C4DE;
+    height: auto;
+    width: auto;
+    }
+
+#caja {
+       background-color: #f00000;
+       max-height: 500px;
+       max-width: 900px;
+       margin: 150px 150px 150px 150px;
+       padding: 10px;
+      }
+
+#caja_2{
+        background-color: #0000FF;
+        height: 400px;
+        width: 400px;
+        margin: 30px;
+       }
+
+#caja_3{
+        background-color:  	#00FF00;
+        position: relative;
+        left: 450px;
+        bottom: 430px;
+        height: 400px;
+        width: 400px;
+        margin: 30px;
+       }

@@ -1,0 +1,52 @@
+body{
+    background-color: #B0C4DE;
+    height: auto;
+    width: auto;
+    }
+
+#caja {
+       background-color: #f00000;
+       max-height: 480px;
+       max-width: 580px;
+       margin: 150px 150px 150px 150px;
+       padding: 10px;
+      }
+
+#caja_2{
+        background-color: #00FF00;
+        height: 400px;
+        width: 100px;
+        margin: 30px;
+       }
+
+#caja_3{
+        background-color:  	#0000FF;
+        position: relative;
+        left: 140px;
+        bottom: 430px;
+        height: 400px;
+        width: 100px;
+        margin: 30px;
+       }
+
+#caja_4{
+        background-color:  	#B0C4DE;
+        position: relative;
+        left: 280px;
+        bottom: 860px;
+        height: 400px;
+        width: 100px;
+        margin: 30px;
+       }
+
+
+#caja_5{
+        background-color:  	#000000;
+        position: relative;
+        left: 410px;
+        bottom: 1290px;
+        height: 400px;
+        width: 100px;
+        margin: 30px;
+       }
+

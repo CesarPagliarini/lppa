@@ -1,0 +1,36 @@
+body{
+    background-color: #7FFF00;
+    height: auto;
+    width: auto;
+    }
+
+#caja {
+       background-color: #f00000;
+       height: 80%;
+       margin: 150px 150px 150px 150px;
+       padding: 10px;
+      }
+
+#caja_2{
+        background-color: #B0C4DE;
+        height: 100px;
+        margin: 30px;
+       }
+
+#caja_3{
+        background-color: #0000FF;
+        height: 100px;
+        margin: 30px;
+       }
+
+#caja_4{
+        background-color: #F8F8FF;
+        height: 100px;
+        margin: 30px;
+       }
+
+#caja_5{
+        background-color: #000000;
+        height: 80px;
+        margin: 30px 30px 15px 30px;
+       }

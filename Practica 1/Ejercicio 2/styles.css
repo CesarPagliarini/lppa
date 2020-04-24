@@ -1,0 +1,20 @@
+body{
+    background-color: #999999;
+    height: auto;
+    width: auto;
+    }
+
+#caja {
+       background-color: #f00000;
+       border: solid;
+       border-color: #000000;
+       height: 80%;
+       margin: 150px 150px 150px 150px;
+       padding: 10px;
+      }
+
+#caja_2{
+        background-color: #7FFF00;
+        height: 400px;
+        margin: 30px;
+       }

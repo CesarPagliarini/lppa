@@ -1,0 +1,13 @@
+body{
+    background-color: #778899;
+    }
+
+#caja {
+    background-color: #00FF00;
+    border: solid;
+    border-color: #000000;
+    height: 500px;
+    width: 700px;
+    margin: 200px 500px 200px 500px;
+    }
+
