@@ -8,9 +8,9 @@ document.getElementById("numero6").addEventListener("click",seis);
 document.getElementById("numero7").addEventListener("click",siete);
 document.getElementById("numero8").addEventListener("click",ocho);
 document.getElementById("numero9").addEventListener("click",nueve);
-document.getElementById("inverso").addEventListener("click",inverso);
+document.getElementById("opuesto").addEventListener("click",opuesto);
 document.getElementById("raiz").addEventListener("click",raiz);
-document.getElementById("porcentaje").addEventListener("click",porcentaje);
+document.getElementById("potencia").addEventListener("click",potencia);
 document.getElementById("multiplicacion").addEventListener("click",producto);
 document.getElementById("division").addEventListener("click",cociente);
 document.getElementById("resta").addEventListener("click",resta);
@@ -21,80 +21,144 @@ document.getElementById("igual").addEventListener("click",resultado);
 
 
 function cero() {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero0").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero0").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                 }
 
 
 function uno()  {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero1").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero1").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                 }
 
 
 function dos()  {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero2").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero2").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                 }
 
 
 function tres() {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero3").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero3").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                 }
 
 
 function cuatro() {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero4").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero4").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                   }
 
 
 function cinco() {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero5").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero5").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                  }
 
 
 function seis() {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero6").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero6").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                 }
 
 
 function siete() {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero7").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero7").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                 }
 
 
 function ocho() {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero8").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero8").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                 }
 
 
 function nueve() {
-                    let actual = document.getElementById('visor').innerHTML;
-                    let sumado = document.getElementById("numero9").innerHTML;
-                    document.getElementById('visor').innerHTML = actual + sumado
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let digito = document.getElementById("numero9").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + digito
                  }
 
 function suma() {
-                      let actual = document.getElementById('visor').innerHTML;
+                      let pantalla = document.getElementById('visor').innerHTML;
                       let operacion = document.getElementById("suma").innerHTML;
-                      document.getElementById('visor').innerHTML = actual + operacion
+                      document.getElementById('visor').innerHTML = pantalla + operacion
                      }
 
-
+function resta() {
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let operacion = document.getElementById("resta").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + operacion
+                }
   
-     
+function producto() {
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let operacion = document.getElementById("multiplicacion").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + operacion
+                    } 
+                    
+function cociente() {
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let operacion = document.getElementById("division").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + operacion
+                    }
+                    
+function decimal() {
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let operacion = document.getElementById("decimal").innerHTML;
+                    document.getElementById('visor').innerHTML = pantalla + operacion
+                    } 
+
+function resultado() {
+                    let pantalla = document.getElementById('visor').innerHTML;
+                    let suma = pantalla.indexOf("+");
+                    let resta = pantalla.indexOf("-");
+                    let producto = pantalla.indexOf("*");
+                    let cociente = pantalla.indexOf("%");
+                    if (suma !== -1){
+                            digitos = pantalla.split("+");
+                            document.getElementById('visor').innerHTML = parseInt(digitos[0]) + parseInt(digitos[1]);
+                                  } else if (resta !== -1) {
+                                                         digitos = pantalla.split("-");
+                                                         document.getElementById('visor').innerHTML = parseInt(digitos[0]) - parseInt(digitos[1]);
+                                                         } else if (producto !== -1) {
+                                                                                   digitos = pantalla.split("*");
+                                                                                   document.getElementById('visor').innerHTML = parseInt(digitos[0]) * parseInt(digitos[1]);
+                                                                                   } else if (cociente !== -1) {
+                                                                                                             digitos = pantalla.split("%");
+                                                                                                             document.getElementById('visor').innerHTML = parseInt(digitos[0]) / parseInt(digitos[1]);
+                                                                                                             }
+
+                    } 
+
+function borrar(){
+                   document.getElementById('visor').innerHTML = "";
+                   }
+
+function opuesto(){
+                  let pantalla = document.getElementById('visor').innerHTML;
+                  let resultado = pantalla * -1;
+                  document.getElementById('visor').innerHTML = resultado
+                  }
+
+function potencia(){
+                   let pantalla = document.getElementById('visor').innerHTML;
+                   let resultado = Math.pow(pantalla, 2);
+                   document.getElementById('visor').innerHTML = resultado
+                   }
+
+function raiz(){
+                let pantalla = document.getElementById('visor').innerHTML;
+                let resultado = Math.sqrt(pantalla);
+                document.getElementById('visor').innerHTML = resultado
+                }
