@@ -1,0 +1,57 @@
+body{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+    }
+
+#formulario{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-width: 50vh;
+            border-radius: 12px;
+            background-color: #b8b6ef;
+           }
+
+.casilla{
+        height: 30px;
+        width: 300px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+        margin: 6px;
+        }
+
+#radio{
+       margin: 6px;
+       font-size: 18px;
+      }
+
+
+
+#checkbox{
+          margin: 6px;
+          font-size: 18px
+         }
+
+textarea{
+         direction: ltr;
+         margin-top: 10px;
+         margin-bottom: 20px;
+
+        }
+label{
+      margin: 10px 1px 1px 1px;
+      font-size: 18px;
+      color: #000000;
+      font-weight: bold;
+     }
+
+#submit{
+        margin: 6px;
+        font-size: 20px;
+        background-color: palegreen;
+    }

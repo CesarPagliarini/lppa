@@ -1,0 +1,164 @@
+<!DOCTYPE HTML> 
+<html lang="es">
+    <head>
+        <title>
+            
+        </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link  rel="stylesheet" href="styles.css" type="text/css">
+    </head>
+
+    <body>
+        <h1>Registro</h1>
+        <form id="formulario" action="#">
+
+            <label for="nombre">
+                Nombre:
+            </label>
+                <input 
+                    type="text" 
+                    name="nombre" 
+                    class="casilla"
+                    placeholder="Escribe tu nombre" 
+                    required
+                />
+            <label for="apellido">
+                Apellido:
+            </label>
+                <input 
+                    type="text" 
+                    name="apellido" 
+                    class="casilla"
+                    placeholder="Escribe tu apellido" 
+                    required
+                />
+            <label for="email">
+                Email:
+            </label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    class="casilla"
+                    placeholder="Escribe tu email" 
+                    required
+                />
+            <label for="edad">
+                Edad:
+            </label>
+                <input 
+                    type="number" 
+                    name="edad" 
+                    class="casilla"
+                    placeholder="Escribe tu edad" 
+                    required
+                />
+            
+            <label for="sexo">
+                Sexo:
+            </label>
+                <div id="radio">
+                    <input 
+                        type="radio" 
+                        name="sexo"
+                        value="hombre" 
+                        required
+                    />
+                    Hombre
+                    <input 
+                        type="radio" 
+                        name="sexo"
+                        value="mujer" 
+                    />
+                    Mujer
+                    <input 
+                        type="radio" 
+                        name="sexo"
+                        value="otro" 
+                    />
+                    Otro
+                </div>
+                <label for="temasInteres">
+                    Temas de Interes:
+                </label>
+                    <div id="checkbox">
+                        <input
+                            type="checkbox"
+                            name="musica"
+                            value="musica"
+                         />
+                         Musica
+                         <input
+                            type="checkbox"
+                            name="deportes"
+                            value="deportes"
+                         />
+                         Deportes
+                         <input
+                            type="checkbox"
+                            name="juegos"
+                            value="juegos"
+                         />
+                         Juegos
+                         <input
+                            type="checkbox"
+                            name="tecnologia"
+                            value="tecnologia"
+                         />
+                         Tecnologia
+                    </div>
+                <label for="pais">
+                    Pais:
+                </label>
+                    <select name="pais">
+                        <option 
+                            value="argentina"
+                            selected
+                        >
+                            Argentina
+                        </option>
+                        <option 
+                            value="chile"
+                        >
+                            Chile
+                        </option>
+                        <option 
+                            value="brasil"
+                        >
+                            Brasil
+                        </option>
+                        <option 
+                            value="uruguay"
+                        >
+                            Uruguay
+                        </option>
+                        <option 
+                            value="peru"
+                        >
+                            Peru
+                        </option>
+                        <option 
+                            value="paraguay"
+                        >
+                            Paraguay
+                        </option>
+                    </select>
+                <label for="comentarios">
+                    Comentarios (opcional):
+                </label>
+                    <textarea 
+                        name="comentarios"
+                        rows="6"
+                        cols="40"
+                    >
+                    </textarea>
+            <input 
+                type="submit"
+                id="submit"  
+                value="Enviar Formulario"
+            >	   
+        </form>
+        <script src="app.js"></script>  
+    </body>
+
+</html>
