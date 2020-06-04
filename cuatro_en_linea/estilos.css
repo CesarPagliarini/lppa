@@ -1,0 +1,44 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+   }
+
+#tablero{
+        height: 70vh;
+        width: 100vh;
+        border: solid;
+        border-radius: 12px;
+        border-spacing: 0;
+        background-color: #AFEEEE;
+        }
+
+td {
+    
+    width: 13%;
+    border: 1px solid;
+    border-color: #000000;
+    }
+
+tr{
+    height: 15%;
+  }
+
+.espacio {
+          position: relative;
+          left: 20px;
+          width: 70%;
+          height: 85%;
+          background: #FFFFFF;
+          border-radius: 1000px;
+         }
+
+#jugador1{
+          background-color: #FF0000;
+         }
+
+#jugador2{
+           background-color: #000000;
+         }
