@@ -73,6 +73,15 @@ var finDelJuegoOblicuoAscendente = function() {                 // Si 4 lugares 
     }
 }
 
+
+var finalDelJuego = function() {
+    finDelJuegoHorizontal()
+    finDelJuegoVertical()
+    finDelJuegoOblicuoDescendente()            
+    finDelJuegoOblicuoAscendente()
+}
+
+
 // Codigo principal
 // ################
 
@@ -87,10 +96,7 @@ for( let y = 0; y < tablero.length; y+=1){
             document.getElementById("Turno").innerHTML = "Turno Jugador:" + turno
             document.getElementById("Turno").className = "jugador" + turno
             pintarFicha()
-            finDelJuegoHorizontal()
-            finDelJuegoVertical()
-            finDelJuegoOblicuoDescendente()            
-            finDelJuegoOblicuoAscendente()
+            finalDelJuego()
         }
     }
 }
