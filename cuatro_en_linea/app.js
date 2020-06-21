@@ -104,6 +104,7 @@ var reiniciarJuego = function() {
     }
     pintarFicha()
     turno = 1
+    sumaTablero  = 0
     document.getElementById("Turno").innerHTML = "Turno Jugador:" + turno
     document.getElementById("Turno").className = "jugador" + turno
     localStorage.clear()                    // Elimina el contenido del LocalStorage
