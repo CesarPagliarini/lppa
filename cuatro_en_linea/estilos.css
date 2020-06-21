@@ -1,54 +1,65 @@
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
-    background-color: #FFFAF0;
-   }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95vh;
+  background-color: #FFFAF0;
+}
 
 #tablero{
-        height: 70vh;
-        width: 100vh;
-        border: solid;
-        border-radius: 12px;
-        border-spacing: 0;
-        background-color: #AFEEEE;
-        }
+  height: 70vh;
+  width: 100vh;
+  border: solid;
+  border-radius: 12px;
+  border-spacing: 0;
+  background-color: #AFEEEE;
+}
 
 td {
     
-    width: 13%;
-    border: 1px solid;
-    border-color: #000000;
-    }
+  width: 13%;
+  border: 1px solid;
+  border-color: #000000;
+}
 
 tr{
-    height: 15%;
-  }
+  height: 15%;
+}
 
 .espacio {
-          position: relative;
-          left: 20px;
-          width: 70%;
-          height: 85%;
-          background: #FFFFFF;
-          border-radius: 1000px;
-         }
+  position: relative;
+  left: 20px;
+  width: 70%;
+  height: 85%;
+  background: #FFFFFF;
+  border-radius: 1000px;
+  box-shadow: inset 4px 4px 5px 0px rgba(0,0,0,0.43);
+}
 
 .jugador1{
-          background-color: #FF0000;
-         }
+  background-color: #FF0000;
+}
 
 .jugador2{
-           background-color: #000000;
-         }
+  background-color: #000000;
+}
 
 #Turno{
-        font-size: 45px;
-        font-family: cursive;
-        font-style: italic;
-        color: #FFFFFF;
-        margin-bottom: 10px;
-        padding: 2px 8px;
-      }
+  font-size: 45px;
+  font-family: cursive;
+  font-style: italic;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+  padding: 2px 8px;
+}
+
+#reiniciar {
+  font-weight: 600;
+  font-size: 20px;
+  background-color:#FFD27D;
+  margin-top: 15px;
+  border-style: outset;
+  border-radius:35px;
+  padding:15px 40px;
+}
