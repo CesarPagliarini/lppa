@@ -1,0 +1,49 @@
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #632432;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: solid;
+}
+
+h1,h2{
+    color: #ffffff;
+}
+table{
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+
+table td:hover{
+    background-color: #000000;
+    color: white;
+}
+
+table tr:hover{
+    background-color: #369681;
+}
+
+
+td {
+  padding: 20px;
+  /*border: 2px solid;*/                  /*Si necesito las divisiones*/
+  border-color: #000000;
+}
+
+tr{
+  text-align: center;
+}
+
+.encabezado {
+   background-color: #246355;
+   color: #ffffff;
+   font-weight: bold;
+}
+
+tr:nth-child(even){
+    background-color: #dddddd;
+}
+
+
