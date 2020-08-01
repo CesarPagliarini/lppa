@@ -17,7 +17,7 @@ body{
 }
 
 td {
-    
+  
   width: 13%;
   border: 1px solid;
   border-color: #000000;
@@ -29,7 +29,9 @@ tr{
 
 .espacio {
   position: relative;
-  left: 20px;
+  /*left: 20px;*/
+  left: 12%;
+
   width: 70%;
   height: 85%;
   background: #FFFFFF;
