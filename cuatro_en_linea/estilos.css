@@ -10,6 +10,7 @@ body{
 #tablero{
   height: 70vh;
   width: 50vw;
+  min-height: 30vh;
   border: solid;
   border-radius: 12px;
   border-spacing: 0;
