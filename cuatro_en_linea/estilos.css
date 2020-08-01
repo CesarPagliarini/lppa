@@ -16,12 +16,6 @@ body{
   background-color: #AFEEEE;
 }
 
-@media screen and (orientation:portrait){
-  #tablero{
-    height: 10vh;
-  }
-}
-
 td {
   width: 13%;
   border: 1px solid;
