@@ -16,9 +16,9 @@ body{
   background-color: #AFEEEE;
 }
 
-@media screen and (orientation: landscape){
+@media screen and (orientation:portrait){
   #tablero{
-    height: 40vh;
+    height: 10vh;
   }
 }
 
