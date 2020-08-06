@@ -10,7 +10,34 @@
         <link  rel="stylesheet" href="estilos.css" type="text/css">
     </head>
     <body>
-        <div id="Turno" class="jugador1">Turno Jugador:1</div>
+            
+            <div id="Turno" class="jugador1"></div>
+            <div id="tiempos">
+                <div><button id="partidas_guardadas">Mostrar partidas guardadas</button></div>
+                <div id="cronometro">Tiempo consumido: 0</div>
+                <div id="cronometros_jugadores">
+                    <div id="cronometro_1" class="tempo">Jugador 1 (seg): 0</div>
+                    <div id="cronometro_2" class="tempo">Jugador 2 (seg): 0</div>
+                </div>
+            </div>
+
+            <table id="tabla">
+                <tr>
+                    <td class="encabezado">
+                        Numero de partida
+                    </td>
+                    <td class="encabezado">
+                        Nombre jugador 1
+                    </td>
+                    <td class="encabezado">
+                        Nombre jugador 2
+                    </td>
+                    <td class="encabezado">
+                        Estado partida
+                    </td>
+                </tr>
+            </table>
+
          <table id="tablero">
             <tr>
                 <td>
@@ -237,7 +264,7 @@
         </table>    
         <div>
             <button id="reiniciar"> 
-                Reiniciar Juego
+                Nuevo Juego
             </button>
         </div>
         <script src="app.js"></script>  

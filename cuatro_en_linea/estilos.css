@@ -30,7 +30,7 @@ tr{
   position: relative;
   /*left: 20px;*/
   left: 15%;
-  width: 70%;
+  width: 65%;
   height: 85%;
   background: #FFFFFF;
   border-radius: 1000px;
@@ -64,3 +64,23 @@ tr{
   padding:15px 40px;
 }
 
+#tiempos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+#cronometro {
+  font-size: 30px;
+  color: #000000;
+}
+
+#cronometros_jugadores {
+  font-size: 20px;
+  text-align: center;
+}
+
+#tabla{
+  display: none;
+}
