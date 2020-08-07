@@ -11,260 +11,266 @@
     </head>
     <body>
             
-            <div id="Turno" class="jugador1"></div>
-            <div id="tiempos">
-                <div><button id="partidas_guardadas">Mostrar partidas guardadas</button></div>
-                <div id="cronometro">Tiempo consumido: 0</div>
-                <div id="cronometros_jugadores">
-                    <div id="cronometro_1" class="tempo">Jugador 1 (seg): 0</div>
-                    <div id="cronometro_2" class="tempo">Jugador 2 (seg): 0</div>
-                </div>
+        <div id="Turno" class="jugador1"></div>
+		<div id="tiempos">
+            <div id="cronometro">Tiempo consumido: 0</div>
+            <div id="cronometros_jugadores">
+				<div id="cronometro_1" class="tempo">Jugador 1 (seg): 0</div>
+				<div id="cronometro_2" class="tempo">Jugador 2 (seg): 0</div>
             </div>
+        </div>
 
-            <table id="tabla">
-                <tr>
-                    <td class="encabezado">
-                        Numero de partida
-                    </td>
-                    <td class="encabezado">
-                        Nombre jugador 1
-                    </td>
-                    <td class="encabezado">
-                        Nombre jugador 2
-                    </td>
-                    <td class="encabezado">
+		<div id="central">
+			<table id="tabla">
+                <tr id="cabezal">
+			        <td class="encabezado">
+				        Numero de partida
+			        </td>
+			        <td class="encabezado">
+				        Nombre jugador 1
+			        </td>
+			        <td class="encabezado">
+			        	Nombre jugador 2
+			        </td>
+			        <td class="encabezado">
                         Estado partida
                     </td>
                 </tr>
             </table>
+		</div>
+			<table id="tablero">
+		            <tr>
+                        <td>
+                            <div id="fila0_columna0" class="espacio">
 
-         <table id="tablero">
-            <tr>
-                <td>
-                    <div id="fila0_columna0" class="espacio">
-
-                    </div>
-                </td>
-                <td>
-                    <div id="fila0_columna1" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila0_columna1" class="espacio">
                         
-                    </div>
-                </td>
-                <td>
-                    <div id="fila0_columna2" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila0_columna2" class="espacio">
                         
-                    </div>
-                </td>
-                <td>
-                    <div id="fila0_columna3" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila0_columna3" class="espacio">
                         
-                    </div>
-                </td>
-                <td>
-                    <div id="fila0_columna4" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila0_columna4" class="espacio">
                         
-                    </div>
-                </td>
-                <td>
-                    <div id="fila0_columna5" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila0_columna5" class="espacio">
                         
-                    </div>
-                </td>
-                <td>
-                    <div id="fila0_columna6" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila0_columna6" class="espacio">
                         
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="fila1_columna0" class="espacio">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="fila1_columna0" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila1_columna1" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila1_columna1" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila1_columna2" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                             <div id="fila1_columna2" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila1_columna3" class="espacio">
+                            </div>
+                        </td>
+                         <td>
+                            <div id="fila1_columna3" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila1_columna4" class="espacio">
+                             </div>
+                        </td>
+                        <td>
+                             <div id="fila1_columna4" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila1_columna5" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila1_columna5" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila1_columna6" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila1_columna6" class="espacio">
 
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="fila2_columna0" class="espacio">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="fila2_columna0" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila2_columna1" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila2_columna1" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila2_columna2" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila2_columna2" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila2_columna3" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila2_columna3" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila2_columna4" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila2_columna4" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila2_columna5" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila2_columna5" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila2_columna6" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila2_columna6" class="espacio">
 
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="fila3_columna0" class="espacio">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="fila3_columna0" class="espacio">
 
-                    </div>    
-                </td>
-                <td>
-                    <div id="fila3_columna1" class="espacio">
+                            </div>    
+                        </td>
+                        <td>
+                            <div id="fila3_columna1" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila3_columna2" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila3_columna2" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila3_columna3" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila3_columna3" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila3_columna4" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila3_columna4" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila3_columna5" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila3_columna5" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila3_columna6" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila3_columna6" class="espacio">
 
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="fila4_columna0" class="espacio">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="fila4_columna0" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila4_columna1" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila4_columna1" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila4_columna2" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila4_columna2" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila4_columna3" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila4_columna3" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila4_columna4" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila4_columna4" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila4_columna5" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila4_columna5" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila4_columna6" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila4_columna6" class="espacio">
 
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div id="fila5_columna0" class="espacio">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="fila5_columna0" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila5_columna1" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila5_columna1" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila5_columna2" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila5_columna2" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila5_columna3" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila5_columna3" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila5_columna4" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila5_columna4" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila5_columna5" class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila5_columna5" class="espacio">
 
-                    </div>
-                </td>
-                <td>
-                    <div id="fila5_columna6"  class="espacio">
+                            </div>
+                        </td>
+                        <td>
+                            <div id="fila5_columna6"  class="espacio">
 
-                    </div>
-                </td>
-            </tr>
-        </table>    
-        <div>
-            <button id="reiniciar"> 
+                            </div>
+                        </td>
+                    </tr>
+                </table>    
+		<div id="pie">
+            <button id="reiniciar" class="pulsador"> 
                 Nuevo Juego
+            </button>
+            <button id="partidas_guardadas" class="pulsador"> 
+                Mostrar partidas guardadas
+            </button> 
+            <button  id="contacto" class="pulsador" href="index_contacto.html">
+                Contactanos
             </button>
         </div>
         <script src="app.js"></script>  

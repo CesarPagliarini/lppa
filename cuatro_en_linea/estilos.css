@@ -26,6 +26,38 @@ tr{
   height: 15%;
 }
 
+#cabezal{
+  font-weight: 600;
+}
+
+#tabla{
+  display: none;
+  border-collapse: collapse;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 15px;
+  border: #000000 solid;
+  
+ }
+
+ #tabla td:hover{
+  background-color: #000000;
+  color: white;
+}
+
+#tabla tr:hover{
+  background-color:  #AFEEEE;
+}
+
+#tabla td{
+  border: solid;
+}
+
+#tablero td:hover{
+  background-color: #BDB76B;
+  color: white;
+}
+
 .espacio {
   position: relative;
   /*left: 20px;*/
@@ -54,10 +86,10 @@ tr{
   padding: 2px 8px;
 }
 
-#reiniciar {
+.pulsador {
   font-weight: 600;
   font-size: 20px;
-  background-color:#FFD27D;
+  background-color: #AFEEEE;
   margin-top: 15px;
   border-style: outset;
   border-radius:35px;
@@ -81,6 +113,50 @@ tr{
   text-align: center;
 }
 
-#tabla{
-  display: none;
+#central{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  align-items: center;
 }
+
+#formulario{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 50vh;
+  border-radius: 12px;
+  background-color: #AFEEEE;
+ }
+
+.casilla{
+height: 30px;
+width: 300px;
+border-radius: 10px;
+text-align: center;
+font-size: 18px;
+margin: 6px;
+}
+
+textarea{
+  direction: ltr;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+label{
+margin: 10px 1px 1px 1px;
+font-size: 18px;
+color: #000000;
+font-weight: bold;
+}
+
+#submit{
+ margin: 6px;
+ font-size: 20px;
+ background-color: palegreen;
+}
+

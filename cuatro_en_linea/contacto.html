@@ -1,0 +1,67 @@
+<!DOCTYPE HTML> 
+<html lang="es">
+    <head>
+        <title>
+            Formulario de contacto
+        </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <link  rel="stylesheet" href="estilos.css" type="text/css">
+    </head>
+    <body>
+        <div id="arriba">
+            <h1>Formulario de contacto</h1>
+        </div>
+        <div id="abajo">
+        <form id="formulario" action="#">
+
+            <label for="nombre">
+                Nombre:
+            </label>
+                <input 
+                    type="text" 
+                    name="nombre" 
+                    class="casilla"
+                    placeholder="Escribe tu nombre" 
+                    required
+                />
+            <label for="apellido">
+                Apellido:
+            </label>
+                <input 
+                    type="text" 
+                    name="apellido" 
+                    class="casilla"
+                    placeholder="Escribe tu apellido" 
+                    required
+                />
+            <label for="email">
+                Email:
+            </label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    class="casilla"
+                    placeholder="Escribe tu email" 
+                    required
+                />
+            <label for="comentarios">
+                    Comentarios (opcional):
+            </label>
+                <textarea 
+                    name="comentarios"
+                    rows="6"
+                    cols="40"
+                >
+                </textarea>
+            <input 
+                type="submit"
+                id="submit"  
+                value="Enviar Formulario"
+            >
+        </form>
+        </div>
+        <script src="app_contacto.js"></script>  
+    </body>
+
+</html>

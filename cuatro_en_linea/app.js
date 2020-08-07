@@ -34,6 +34,8 @@ var tiempo_jugador1 = 0     // Cronometro acumulativo del jugador 1
 
 var tiempo_jugador2 = 0     // Cronometro acumulativo del jugador 2
 
+const cabecera = document.getElementById('tabla').innerHTML
+
 
 // Desarrollo del codigo
 // #####################
@@ -63,7 +65,7 @@ var pintarFicha = function() {
 // Determina si 4 fichas del mismo color se colocaron, de fomra consecutiva, en posicion horizontal
 var finDelJuegoHorizontal = function() {                          // Si 4 lugares contiguos en forma horizontal estan ocupados por el mismo color, termina el juego.
     for( let y=0; y < tablero.length; y+=1){
-       for(let x=0; x<4; x+=1){
+        for(let x=0; x<4; x+=1){
            if(tablero[y][x] === tablero[y][x+1] && tablero[y][x+1] === tablero[y][x+2] && tablero[y][x+2] === tablero[y][x+3] && tablero[y][x] !=0){
                let ganador = vencedor(tablero[y][x])
                //alert("Gano jugador " + tablero[y][x])         // Debug
@@ -77,7 +79,7 @@ var finDelJuegoHorizontal = function() {                          // Si 4 lugare
 
 // Determina si 4 fichas del mismo color se colocaron, de fomra consecutiva, en posicion vertical
 var finDelJuegoVertical = function() {                          // Si 4 lugares contiguos en forma vertical estan ocupados por el mismo color, termina el juego.
-    for( let x=0; x < tablero.length; x+=1){
+    for( let x=0; x < tablero[0].length; x+=1){
        for(let y=0; y<3; y+=1){
            if(tablero[y][x] === tablero[y+1][x] && tablero[y+1][x] === tablero[y+2][x] && tablero[y+2][x] === tablero[y+3][x] && tablero[y][x] !=0){
             let ganador = vencedor(tablero[y][x])
@@ -215,7 +217,7 @@ var continuarJuego = function(valor){
         if(estadoPartidaAuxiliar == null){
             nuevoJuego()
         }else{
-            alert('Juego finalizado, por favor seleccione otra partida') 
+            alert('Juego finalizado, por favor seleccione otra partida o inicie una nueva') 
         }
     }
 }
@@ -255,7 +257,7 @@ var partidasJugadas = function(){
 // Genera y muestra la tabla con el listado de las partidas (terminadas o en estado jugable)
 var mostrarPartidasGuardadas = function(){
     let cantidadPartidas = localStorage.getItem('cantidadPartidas')
-    var tabla = document.getElementById('tabla') 
+    document.getElementById('tabla').innerHTML = cabecera 
     if(cantidadPartidas != null){
         let partidas = Number.parseInt(cantidadPartidas)
         for(let x = 1; x <=partidas ;x+=1){
@@ -288,6 +290,7 @@ var mostrarPartidasGuardadas = function(){
         }  
     } document.getElementById('tabla').style.display = 'inline'
 }
+
 
 // Determina el nombre del vencedor
 var vencedor = function(numero){
@@ -368,11 +371,15 @@ for( let y = 0; y < tablero.length; y+=1){
                     let juego_valor = juego.innerHTML
                     //alert(juego_valor)                                    // Debug
                     continuarJuego(juego_valor)
+                    document.getElementById('tabla').style.display = 'none'         //prueba
                 }
             }
         }
     }
 }
 
-
-
+var link = document.getElementById('contacto')
+link.onclick = function(){
+    window.open('contacto.html', '_blank')
+    
+}
